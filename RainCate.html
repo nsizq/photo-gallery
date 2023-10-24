@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rain & Clouds & Moon Pics</title>
+    <style>
+        /* Gallery Container */
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        /* Gallery Item */
+        .gallery-item {
+            position: relative;
+            margin: 10px;
+            width: 180px;
+            /* Adjusted width to maintain 16:9 aspect ratio */
+            height: 320px;
+            /* Adjusted height to maintain 16:9 aspect ratio */
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        /* Gallery Item Image */
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        /* Hover Effect */
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        body {
+        margin: auto;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        overflow: auto;
+        background: linear-gradient(
+          315deg,
+          rgba(101, 0, 94, 1) 3%,
+          rgba(60, 132, 206, 1) 38%,
+          rgba(48, 238, 226, 1) 68%,
+          rgba(255, 25, 25, 1) 98%
+        );
+        animation: gradient 15s ease infinite;
+        background-size: 400% 400%;
+        background-attachment: fixed;
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 0%;
+        }
+        50% {
+          background-position: 100% 100%;
+        }
+        100% {
+          background-position: 0% 0%;
+        }
+      }
+
+      .wave {
+        background: rgb(255 255 255 / 25%);
+        border-radius: 1000% 1000% 0 0;
+        position: fixed;
+        width: 200%;
+        height: 12em;
+        animation: wave 10s -3s linear infinite;
+        transform: translate3d(0, 0, 0);
+        opacity: 0.8;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+      }
+
+      .wave:nth-of-type(2) {
+        bottom: -1.25em;
+        animation: wave 18s linear reverse infinite;
+        opacity: 0.8;
+      }
+
+      .wave:nth-of-type(3) {
+        bottom: -2.5em;
+        animation: wave 20s -1s reverse infinite;
+        opacity: 0.9;
+      }
+
+      @keyframes wave {
+        2% {
+          transform: translateX(1);
+        }
+
+        25% {
+          transform: translateX(-25%);
+        }
+
+        50% {
+          transform: translateX(-50%);
+        }
+
+        75% {
+          transform: translateX(-25%);
+        }
+
+        100% {
+          transform: translateX(1);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+    </div>
+
+<body class="gradient-background">
+    <section id="title" >
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="Assets/Rain & Clouds & Moon/JPGs/2022-07-31_17.01.59.jpg" alt="Image 1" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="Assets/Rain & Clouds & Moon/JPGs/2022-08-19_20.34.02.jpg" alt="Image 2" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="Assets/Rain & Clouds & Moon/JPGs/2023-03-10_23.45.14.jpg" alt="Image 3" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="Assets/Rain & Clouds & Moon/JPGs/2022-12-01_06.15.11.jpg" alt="Image 4" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="Assets/Rain & Clouds & Moon/JPGs/2022-12-01_06.15.30.jpg" alt="Image 5" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="Assets/Rain & Clouds & Moon/JPGs/2022-12-31_17.15.48.jpg" alt="Image 6" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="Assets/Rain & Clouds & Moon/JPGs/2022-12-31_17.15.51.jpg" alt="Image 7" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="Assets/Rain & Clouds & Moon/JPGs/2023-01-09_14.46.52.jpg" alt="Image 8" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="Assets/Rain & Clouds & Moon/JPGs/2023-03-10_23.45.11.jpg" alt="Image 9" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="Assets/Rain & Clouds & Moon/JPGs/2022-11-04_16.58.28.jpg" alt="Image 10" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="Assets/Rain & Clouds & Moon/JPGs/2023-03-23_18.36.56.jpg" alt="Image 11" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="Assets/Rain & Clouds & Moon/JPGs/2023-03-24_18.33.10.jpg" alt="Image 12" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="Assets/Rain & Clouds & Moon/JPGs/2023-04-13_18.24.20.jpg" alt="Image 13" loading="lazy">
+            </div>
+            <!-- Add more gallery items as needed -->
+        </div>
+    </section>
+</body>
+
+</html>
