@@ -143,6 +143,7 @@
         touch-action: manipulation;
         vertical-align: baseline;
         width: auto;
+        position: fixed;
       }
 
       .button:hover,
@@ -167,7 +168,7 @@
   </head>
 
   <body>
-    <a href="index.html" class="button">Home</a>
+    <a href="index.html" class="button" id="sticky-button">Home</a>
 
     <div>
       <div class="wave"></div>
@@ -322,3 +323,15 @@
     </section>
   </body>
 </html>
+<script>
+  window.addEventListener("scroll", function () {
+    var button = document.getElementById("sticky-button");
+    var distanceFromTop = button.getBoundingClientRect().top;
+
+    if (distanceFromTop <= 0) {
+      button.classList.add("sticky");
+    } else {
+      button.classList.remove("sticky");
+    }
+  });
+</script>
